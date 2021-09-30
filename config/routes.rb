@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   # -- List of respurces can be see : index
   # -- Single Resource can be seen : show
   # -- Create Resources
-  get "todos", to: "todos#index"
-  post "todos/create", to: "todos#create"
-  get "todos/:id", to: "todos#show"
+  #get "todos", to: "todos#index"
+  #post "todos/create", to: "todos#create"
+  #get "todos/:id", to: "todos#show"
+  resources :todos
 end
