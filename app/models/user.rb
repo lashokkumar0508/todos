@@ -1,4 +1,4 @@
-class Users < ActiveRecord::Base
+class User < ActiveRecord::Base
   def display_user
     "#{name} #{email}  #{password}"
   end
