@@ -100,6 +100,10 @@ body
   width: 14px;
   height: 16px;
 }
+.TodoItem-CheckboxText
+{
+  text-decoration: line-through;
+}
 .Todosection
 {
   margin-bottom: 10px;
@@ -115,6 +119,7 @@ body
 }
 .TodoItem-delete
 {
+  margin-left: 10px;
   visibility: hidden;
   width: 16px;
 }
@@ -124,7 +129,7 @@ body
 }
 .TodoItem-Container:hover
 {
-  background-color: rgb(170, 169, 169);
+  background-color: rgb(199, 197, 197);
 }
 .TodoItem-date
 {
