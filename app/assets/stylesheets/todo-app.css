@@ -100,7 +100,7 @@ body
   width: 14px;
   height: 16px;
 }
-.TodoItem-CheckboxText
+.TodoItem-CheckboxCompletedText
 {
   text-decoration: line-through;
 }
