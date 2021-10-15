@@ -19,7 +19,9 @@
               <p class="TodoItem-duedate"> <%= todo.due_date.to_s(:short)%></p>
             <% end %>
             <a class="TodoItem-delete" href="javascript::void(0)">
-               <%= image_tag "bin.png",height: 15 %>
+               <%= form_with(url: "/todos/#{todo.id}", method: "delete") do %>
+                  <input type ="image" src= "trash.svg" height = 15>
+                <% end %>
             </a>
         </div>
       </li>
