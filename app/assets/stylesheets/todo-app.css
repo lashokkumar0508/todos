@@ -121,8 +121,7 @@ body
 {
   margin-left: 10px;
   visibility: hidden;
-  width: 16px;
-  height:
+  width: 15px;
 }
 .TodoItem-Container:hover .TodoItem-delete
 {
