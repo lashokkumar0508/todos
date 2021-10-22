@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   has_many :todos
   def display_user
-    "#{name} #{email}  #{password}"
+    "#{first_name} #{email}  #{password_digest}"
   end
 
 end
