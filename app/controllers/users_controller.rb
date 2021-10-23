@@ -5,10 +5,10 @@ class UsersController < ApplicationController
     render plain:User.all.map {|user| user.display_user }.join("\n")
   end
   def create
-    name = params[:name]
+    name = params[:first_name]
     email = params[:email]
     password = params[:password]
-    new_user = User.create!(name: name, email: email,password: password)
+    new_user = User.create!(first_name: name, last_name: params[:last_name],email: email,password_digest: password)
     respose_text = "Hey you create todo wit ID = #{new_user.id}"
     render plain: respose_text
   end

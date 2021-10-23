@@ -1,0 +1,30 @@
+.formSection
+{
+  margin-bottom: 20px;
+}
+.newUsersTitle
+{
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: oblique;
+}
+.userformInput
+{
+  font-size: 20px;
+  padding: 5px;
+}
+.userformInput-lable
+{
+  margin-bottom: 8px;
+  color: rgb(77, 75, 75);
+  font-size: 15px;
+}
+.userform-submit
+{
+  background-color: green;
+  padding: 10px;
+  border: 0;
+  font-size: 20px;
+  border-radius: 5px;
+}
