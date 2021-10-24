@@ -1,0 +1,16 @@
+<h1 class = "newUsersTitle"> Users Signin </h1>
+<section class = "UsersNew">
+<%= form_with url: sessions_path do |form| %>
+  <div class = "formSection">
+      <p class = "userformInput-lable"> Email : </p>
+      <%= form.email_field :email, class: "userformInput" %>
+   </div>
+   <div class = "formSection">
+      <p class = "userformInput-lable"> Password : </p>
+      <%= form.password_field :password, class: "userformInput" %>
+   </div>
+   <div class = "formSection">
+      <%= form.submit "Login", class:"userform-submit" %>
+   </div>
+<% end %>
+</section>
