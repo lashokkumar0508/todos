@@ -9,3 +9,10 @@
 {
   margin-bottom:20px;
 }
+.current_user
+{
+  margin-bottom: 20px;
+  background-color: darkgray;
+  padding: 10px;
+  color: royalblue
+}
