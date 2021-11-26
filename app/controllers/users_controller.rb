@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  skip_before_action :verify_authenticity_token
+  skip_before_action :ensure_user_logged_in
   def index
     #render plain: "Welcom to user all"
     render plain:User.all.map {|user| user.display_user }.join("\n")
@@ -10,8 +10,8 @@ class UsersController < ApplicationController
     email = params[:email]
     params[:password]
     new_user = User.create!(first_name: name, last_name: params[:last_name],email: email,password: params[:password])
-    respose_text = "Hey you create todo wit ID = #{new_user.id}"
-    render plain: respose_text
+    session[:current_user_id] = new_user.id
+    redirect_to "/"
   end
   def login
     email = params[:email]
